@@ -116,10 +116,10 @@ public class Main {
 		myChest = new MyArmor("Awesome Chestplate", MAM, 0, EntityEquipmentSlot.CHEST);
 		myLeggings = new MyArmor("Awesome Leggings", MAM, 0, EntityEquipmentSlot.LEGS);
 		myBoots = new MyArmor("Awesome Boots", MAM, 0, EntityEquipmentSlot.FEET);
-		GameRegistry.register(myHelmet, new ResourceLocation(myHelmet.getName()));
-		GameRegistry.register(myChest, new ResourceLocation(myChest.getName()));
-		GameRegistry.register(myLeggings, new ResourceLocation(myLeggings.getName()));
-		GameRegistry.register(myBoots, new ResourceLocation(myBoots.getName()));
+		GameRegistry.register(myHelmet, new ResourceLocation("mymod", myHelmet.getName()));
+		GameRegistry.register(myChest, new ResourceLocation("mymod", myChest.getName()));
+		GameRegistry.register(myLeggings, new ResourceLocation("mymod", myLeggings.getName()));
+		GameRegistry.register(myBoots, new ResourceLocation("mymod", myBoots.getName()));
 		
 		// LOAD THE FOOD
 		myFood = new MyFood("Awesome Food", 3, 3.0F, true);
